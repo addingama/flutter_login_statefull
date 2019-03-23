@@ -55,7 +55,9 @@ class LoginScreenState extends State<LoginScreen> {
     return RaisedButton(
       child: Text('Submit!!'),
       color: Colors.blue,
-      onPressed: () {},
+      onPressed: () {
+        formKey.currentState.reset();
+      },
     );
   }
 }
