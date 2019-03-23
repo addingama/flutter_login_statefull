@@ -20,7 +20,8 @@ class LoginScreenState extends State<LoginScreen> {
           children: <Widget>[
             emailField(),
             passwordField(),
-            // submitButton(),
+            Container(margin: EdgeInsets.all(25.0),),
+            submitButton(),
           ],
         ),
       ),
@@ -48,6 +49,10 @@ class LoginScreenState extends State<LoginScreen> {
   }
 
   Widget submitButton() {
-
+    return RaisedButton(
+      child: Text('Submit!!'),
+      color: Colors.blue,
+      onPressed: () {},
+    );
   }
 }
