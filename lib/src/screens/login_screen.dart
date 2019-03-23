@@ -31,8 +31,9 @@ class LoginScreenState extends State<LoginScreen> {
     return TextFormField(
       decoration: InputDecoration(
         labelText: 'Email Address',
-        hintText: 'you@example.com'
+        hintText: 'you@example.com',
       ),
+      keyboardType: TextInputType.emailAddress,
     );
   }
 
